@@ -1,0 +1,102 @@
+body {
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  font-size: 0.8rem;
+}
+* {
+  font-family: Droid Sans Fallback;
+  outline: none;
+}
+.header {
+  font-size: 20px;
+  height: 50px;
+  padding: 0 15px;
+  display: flex;
+}
+.himg {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url("../../APP切图/登录/nav_back_icon@2x.png") no-repeat center;
+  background-size: 25%;
+}
+.htxt {
+  display: inline-block;
+  flex: 1;
+  line-height: 50px;
+  text-align: center;
+  padding-right: 50px;
+  color: #ea5404;
+}
+.agent-in {
+  display: block;
+  width: 102%;
+  height: 34px;
+  background-color: #efeff4;
+  padding: 0;
+  border: 0;
+  padding-left: 20px;
+}
+.cot-img {
+  height: 85px;
+  width: 127px;
+  border-bottom: 1px solid #efeff4;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+.cott {
+  height: 75px;
+  width: 75px;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+  top: 10px;
+  border-radius: 50%;
+  background-color: #878787;
+  text-align: center;
+  line-height: 75px;
+  color: #fff;
+  font-size: 1em;
+}
+.name {
+  display: block;
+  height: 30px;
+  width: 61%;
+  border: 0;
+  margin: 5px auto;
+  border-radius: 5px;
+  background-color: #efeff4;
+  padding-left: 0.8em;
+}
+.cot-img2 {
+  height: 65px;
+  line-height: 65px;
+  width: 100px;
+  margin: 5px auto;
+  background-color: #878787;
+  color: #fff;
+  border-radius: 8px;
+  text-align: center;
+}
+.bot {
+  height: 140px;
+  width: 100%;
+  background: #efeff4;
+  padding: 0 15px;
+  overflow: hidden;
+}
+.botbtn {
+  width: 100%;
+  height: 45px;
+  cursor: pointer;
+  background: #f00;
+  color: #fff;
+  text-align: center;
+  line-height: 45px;
+  font-size: 1.6em;
+  border-radius: 6px;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
