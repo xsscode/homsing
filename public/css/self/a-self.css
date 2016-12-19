@@ -1,0 +1,155 @@
+body {
+  background: #efeff4;
+}
+.header {
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 1rem;
+  border-bottom: 1px solid #d6d7dc;
+  background: url("../../APP切图/我/nav_set_icon@2x.png") no-repeat right 11px center #fff;
+  background-size: 16px;
+  font-size: 1.2rem;
+}
+.sec {
+  min-height: 100px;
+  margin-top: 10px;
+  background: #fff;
+}
+.sec .sec-top {
+  line-height: 95px;
+  height: 95px;
+  border-bottom: 1px solid #d6d7dc;
+  padding-left: 6rem;
+  position: relative;
+  background: url("../../APP切图/我/log in_user-head@2x.png") no-repeat left 12px center;
+  background-size: 64px 64px;
+  font-size: 1rem;
+}
+.sec .sec-top:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 12px;
+  background: #b4b4b4;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 20px;
+  top: 45px;
+}
+.sec .sec-top:before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 12px;
+  background: #b4b4b4;
+  transform: rotate(-45deg);
+  position: absolute;
+  right: 20px;
+  top: 53px;
+}
+.sec .sec-bottom {
+  height: 45px;
+  border-bottom: 1px solid #d6d7dc;
+  line-height: 45px;
+  display: flex;
+}
+.sec .sec-bottom .b-l {
+  height: 45px;
+  flex: 1;
+  position: relative;
+  display: flex;
+}
+.sec .sec-bottom .b-l:after {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background: #d6d7dc;
+  position: absolute;
+  top: 7px;
+  right: 0;
+}
+.sec .sec-bottom .b-l .l1 {
+  flex: 1;
+  text-align: right;
+  height: 45px;
+  font-size: 1.7rem;
+  line-height: 42px;
+}
+.sec .sec-bottom .b-l .l2 {
+  flex: 1;
+  text-align: left;
+  height: 45px;
+  color: #727272;
+  text-indent: 0.4rem;
+}
+.sec .sec-bottom .b-r {
+  height: 45px;
+  flex: 1;
+  display: flex;
+}
+.sec .sec-bottom .b-r .r1 {
+  flex: 1;
+  height: 45px;
+  text-align: right;
+  font-size: 1.7rem;
+  line-height: 42px;
+}
+.sec .sec-bottom .b-r .r2 {
+  flex: 1;
+  height: 45px;
+  text-align: left;
+  color: #727272;
+  text-indent: 0.4rem;
+}
+.li {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 3rem;
+  margin-top: 9px;
+  border-bottom: 1px solid #d6d7dc;
+  position: relative;
+}
+.li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background: #b4b4b4;
+  transform: rotate(45deg);
+  top: 20px;
+  right: 20px;
+}
+.li:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background: #b4b4b4;
+  transform: rotate(-45deg);
+  top: 26px;
+  right: 20px;
+}
+.li1 {
+  background: #fff url("../../APP切图/我/content_list_icon01@2x.png") no-repeat left 1rem center;
+  background-size: 20px 19px;
+}
+.li2 {
+  background: #fff url("../../APP切图/我/content_list_icon02@2x.png") no-repeat left 1rem center;
+  background-size: 20px 19px;
+}
+.li3 {
+  background: #fff url("../../APP切图/我/content_list_icon05@2x.png") no-repeat left 1rem center;
+  background-size: 20px 19px;
+}
+.li4 {
+  background: #fff url("../../APP切图/我/content_list_icon03@2x.png") no-repeat left 1rem center;
+  background-size: 20px 19px;
+}
+.li5 {
+  background: #fff url("../../APP切图/我/content_list_icon04@2x.png") no-repeat left 1rem center;
+  background-size: 20px 19px;
+}

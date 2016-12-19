@@ -1,0 +1,1 @@
+$(".select").children().on("tap",function(){console.log(6);var s=$(this),l=s.index();s.toggleClass("active").siblings().removeClass("active"),$(".l").css("display","none"),$(".l").eq(l).css("display","block")});
