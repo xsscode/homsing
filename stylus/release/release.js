@@ -11,9 +11,9 @@ iaro.on("click",function(){
 $(".i-li").on("click",function(){
 	var self=$(this)
 	var tt=self.text()
-
 	$(".i-txt1").text(tt)
-})
+	$(".i-txt1" ).css("color","#000")
+	})
 $(".type-li").on("click",function(){
 	var self=$(this)
 	$(".l" ).removeClass("img-p")
