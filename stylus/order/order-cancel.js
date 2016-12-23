@@ -27,7 +27,17 @@ $(".c4-li:eq(2)").on("tap",function(){
 })
 
 $(".b").on("tap",function(){
-	console.log(0)
+
 	$(".bgcan" ).show()
 	$(".ensurecan" ).show()
+})
+
+$(".en-bot").on("tap",function(){
+	console.log(0)
+	$(".bgcan" ).hide()
+	$(".ensurecan" ).hide()
+})
+
+$(".pre").on("tap",function(){
+location.href = "./order-form.html"
 })

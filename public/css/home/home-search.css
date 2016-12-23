@@ -1,5 +1,6 @@
 * {
   outline: none;
+  font-family: Droid Sans Fallback;
 }
 body {
   background: #fff;

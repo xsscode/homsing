@@ -1,4 +1,8 @@
 * {
+  outline: none;
+  font-family: Droid Sans Fallback;
+}
+* {
   font-family: Droid Sans Fallback;
   outline: none;
 }

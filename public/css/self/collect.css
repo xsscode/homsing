@@ -1,3 +1,7 @@
+* {
+  outline: none;
+  font-family: Droid Sans Fallback;
+}
 body {
   background: #efeff4;
 }
@@ -66,7 +70,7 @@ body {
   min-height: 200px;
 }
 .demd {
-  display: none;
+  display: block;
 }
 .demd .sec {
   margin: 12px 12px 0 12px;
@@ -218,4 +222,11 @@ body {
 .active {
   color: #ed7345;
   border-bottom: 1px solid #ed7345;
+}
+.col-back {
+  position: fixed;
+  width: 50px;
+  height: 40px;
+  left: 0;
+  top: 0;
 }
