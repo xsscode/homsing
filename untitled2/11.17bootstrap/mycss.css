@@ -1,0 +1,15 @@
+.s{width:200px;height: 30px}
+.table-striped > tbody > tr:nth-child(odd){
+	background: tan;
+}
+.ss{width:0px;height:0px;border-bottom: 4px ;border-top: 4px;border-left: 4px transparent;}
+.table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+	border: 1px solid #000;
+}
+.table-hover > tbody > tr:hover {
+	background-color: #845f5f;
+}
+.glyphicon-ok:before {
+	content: "\e013";
+	color: blue;
+}
