@@ -11,7 +11,7 @@ var nodemon=require('gulp-nodemon');
 gulp.task('nodemon',function(ab){
 	var ft=false;
 	return nodemon({
-		script:'./app.js'
+		script:'./server.js'
 	} ).on('start',function(){
 		if(!ft){
 			ab();
@@ -22,10 +22,10 @@ gulp.task('nodemon',function(ab){
 gulp.task('browserSync',['nodemon'],function(){
 	browserSync.init({
 		proxy:{
-			target:'http://127.0.0.1:11012'
+			target:'http://127.0.0.1:8888'
 		},
 		files:['*'],
-		port:10045,
+		port:16933,
 		open:false,
 		notify:false
 	})

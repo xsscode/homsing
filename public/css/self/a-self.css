@@ -1,3 +1,7 @@
+* {
+  outline: none;
+  font-family: Droid Sans Fallback;
+}
 body {
   background: #efeff4;
 }
@@ -47,6 +51,21 @@ body {
   position: absolute;
   right: 20px;
   top: 53px;
+}
+.sec .sec-top .name {
+  height: 28px;
+  line-height: 40px;
+  font-size: 1rem;
+  color: #323232;
+  padding-top: 20px;
+}
+.sec .sec-top .gai {
+  height: 30px;
+  line-height: 30px;
+  font-size: 0.8rem;
+  color: #939090;
+  background: url("../../APP切图/我/log-in_edit_icon@2x.png") no-repeat left 81px center;
+  background-size: 14px;
 }
 .sec .sec-bottom {
   height: 45px;
@@ -133,23 +152,78 @@ body {
   top: 26px;
   right: 20px;
 }
-.li1 {
+.li11 {
   background: #fff url("../../APP切图/我/content_list_icon01@2x.png") no-repeat left 1rem center;
   background-size: 20px 19px;
 }
-.li2 {
+.li22 {
   background: #fff url("../../APP切图/我/content_list_icon02@2x.png") no-repeat left 1rem center;
   background-size: 20px 19px;
 }
-.li3 {
+.li33 {
   background: #fff url("../../APP切图/我/content_list_icon05@2x.png") no-repeat left 1rem center;
   background-size: 20px 19px;
 }
-.li4 {
+.li44 {
   background: #fff url("../../APP切图/我/content_list_icon03@2x.png") no-repeat left 1rem center;
   background-size: 20px 19px;
 }
-.li5 {
+.li55 {
   background: #fff url("../../APP切图/我/content_list_icon04@2x.png") no-repeat left 1rem center;
   background-size: 20px 19px;
+}
+.self-head {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.footer {
+  background: #fff;
+  height: 50px;
+  position: fixed;
+  z-index: 4;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #d6d7dc;
+  display: flex;
+}
+.footer .footer-li {
+  flex: 1;
+}
+.footer .footer-li .limg1 {
+  background: url("../../APP切图/底部导航栏/bottom_nor_icon04@2x.png") no-repeat center;
+}
+.footer .footer-li .limg2 {
+  background: url("../../APP切图/底部导航栏/bottom_nor_icon03@2x.png") no-repeat center;
+}
+.footer .footer-li .limg3 {
+  background: url("../../APP切图/底部导航栏/bottom_nor_icon02@2x.png") no-repeat center;
+}
+.footer .footer-li .limg4 {
+  background: url("../../APP切图/底部导航栏/bottom_press_icon01@2x.png") no-repeat center;
+}
+.footer .footer-li .limid {
+  height: 64px;
+  width: 44px;
+  background: url("../../APP切图/底部导航栏/bottom_icon05@2x.png") no-repeat center top;
+  margin: 0 auto;
+  border-radius: 4px;
+  margin-top: 6%;
+  background-size: 100%;
+}
+.footer .footer-li .li1 {
+  height: 32px;
+  background-size: 37% 80%;
+}
+.footer .footer-li .litxt {
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #b4b4b4;
+}
+.footer .footer-li .active {
+  color: #ea5404;
 }

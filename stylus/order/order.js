@@ -1,18 +1,23 @@
 /**
  * Created by Administrator on 2016/12/19 0019.
  */
-$(".sec").on("swipeLeft",function(){
-	$(this ).animate({"margin-left":-66},300)
-	$(".delete" ).animate({"right":0},300)
+$(".sec-box").on("swipeLeft",function(){
+	$(this).find(".sec").animate({"margin-left":-66},300)
+	$(this).find(".delete" ).animate({"right":0},300)
 })
-$(".sec").on("swipeRight",function(){
-	$(this ).animate({"margin-left":0},300)
-	$(".delete" ).animate({"right":-66},300)
+$(".sec-box").on("swipeRight",function(){
+	$(this ).find(".sec").animate({"margin-left":0},300)
+	$(this).find(".delete" ).animate({"right":-66},300)
 })
-/*$(".h3-box").on("tap",function(){
+$(".sec-box .delete").on("tap",function(){
+	$(this ).parent().remove()
+})
 
+
+$(".h3-box").on("click",function(){
+      console.log(6)
     $(this ).addClass("h3-box-click" ).removeClass("h3-box" ).text("已接单,待反馈")
-})*/
+})
 $(".b").on("tap",function(){
 	location.href="./order-form.html"
 	console.log(56)
@@ -23,7 +28,7 @@ $(".b").on("tap",function(){
 })
 
 $(".call").find(".c-b" ).on("tap",function(){
-	$(".call" ).hide()
+	$(".call" ).hide();
 	$(".bg" ).hide()
 });
 
@@ -31,9 +36,10 @@ $(".ban-c1").find(".c-r").on("tap",function(){
 	$(".call" ).show()
 	$(".bg" ).show()
 });
-$(".sec-click" ).on("tap",function(e){
+$(".sec-right" ).on("tap",function(e){
 	if(e.target.className!="h3-box"){
 		if($(this ).find(".h3-box-click").length){
+
 			location.href="./order-moredone.html"
 		}
 else{location.href="./order-more.html"}
@@ -53,9 +59,9 @@ $(".change").find(".b-r").on("tap",function(){
 	$(".ensure" ).show()
 })
 
-$(".h3-box").on("tap",function(){
+/*$(".h3-box").on("tap",function(){
 location.href="./order-form.html"
-})
+})*/
 
 $(".bot-li" ).eq(0).on("tap",function(){
 	location.href="./order-datechange.html"
@@ -80,4 +86,17 @@ $(".nav-l" ).on("tap",function(){
 
 $(".bot-li").eq(1).on("tap",function(){
 	location.href="./order-complete.html"
+})
+
+$(".temp .c-b .b-r").on("tap",function(){
+
+	location.href="./order-moredone.html"
+})
+$(".temp .c-b .b-l").on("tap",function(){
+
+	location.href="./order.html"
+})
+
+$(".bot-li").eq(2).on("tap",function(){
+	location.href="./order-cancel.html"
 })

@@ -1,17 +1,25 @@
 * {
   outline: none;
+  font-family: Droid Sans Fallback;
 }
 body {
   background: #fff;
 }
-.header {
+.header-search {
   height: 35px;
   padding: 5px 0 5px 0;
   display: flex;
   border-bottom: 1px solid #d6d7dc;
   position: relative;
 }
-.header .x {
+.header-search .sessionlog {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 0;
+  top: 0;
+}
+.header-search .x {
   position: absolute;
   width: 16px;
   height: 16px;
@@ -20,7 +28,7 @@ body {
   background: url("../../APP切图/首页/nav_icon_delete@2x.png") no-repeat center;
   background-size: 100%;
 }
-.header .search {
+.header-search .search-history {
   box-sizing: border-box;
   height: 35px;
   margin: 0 20px 0 10px;
@@ -33,7 +41,7 @@ body {
   background-size: 13px;
   border-radius: 4px;
 }
-.header .cancel {
+.header-search .cancel {
   height: 35px;
   width: 40px;
   color: #ea5404;
@@ -66,6 +74,7 @@ ul li {
   color: #323232;
   position: relative;
   font-size: 0.9rem;
+  display: none;
 }
 ul li:after {
   content: "";

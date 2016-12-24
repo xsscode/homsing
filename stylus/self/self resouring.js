@@ -17,3 +17,12 @@ $(".delete" ).on("tap",function(){
 	console.log(6666)
 	$(this ).parent().remove()
 })
+
+$(".himg").on("tap",function(){
+location.href='./a-self.html'
+})
+
+$(".sec").on("tap",function(){
+	location.href='./house details.html'
+})
+

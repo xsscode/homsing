@@ -1,3 +1,7 @@
+* {
+  outline: none;
+  font-family: Droid Sans Fallback;
+}
 body {
   background: #fff;
   padding: 0;
@@ -32,12 +36,13 @@ body {
 }
 .agent-in {
   display: block;
-  width: 102%;
+  width: 100%;
   height: 34px;
   background-color: #efeff4;
   padding: 0;
   border: 0;
   padding-left: 20px;
+  box-sizing: border-box;
 }
 .cot-img {
   height: 85px;
@@ -86,6 +91,7 @@ body {
   background: #efeff4;
   padding: 0 15px;
   overflow: hidden;
+  box-sizing: border-box;
 }
 .botbtn {
   width: 100%;

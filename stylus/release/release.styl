@@ -1,3 +1,21 @@
+*
+ outline none
+ font-family Droid Sans Fallback
+.nav
+  height 45px
+  line-height 45px
+  text-align center
+  display flex
+  background #fff
+  border-bottom #d6d7dc
+  .nav-l
+    width 40px
+    padding 0 8px 0 8px
+    font-size .9rem
+    text-align right
+  .nav-m
+    flex 1
+    font-size 1.2rem
 
 *
  outline none
@@ -6,7 +24,7 @@ body
    	 background #efeff4
   .head
       height 56px
-      padding 12px
+      padding 0 12px 0 12px
       display flex
     .head-search
       flex 1
@@ -26,7 +44,8 @@ body
       width 65px
       padding-left 35px
       height 56px
-      background url("../../APP切图/发布房源/content_plus_icon@2x.png") no-repeat left 5px center
+      background url("../../APP切图/发布房源/content_plus_icon@2x.png") no-repeat left 10px center
+      background-size 20px
   .sec
       min-height 200px
       background #fff
@@ -44,23 +63,24 @@ body
         display flex
         .li-left
         	height 18px
-        	width 61px
+        	width 66px
         	line-height 18px
         	color #727272
         	text-align right
         	padding-right 8px
+        	font-size .9rem
         .li-right
         	height 18px
         	flex 1
         	color #b4b4b4
         	position relative
         	line-height 18px
-        	font-size 0.9em
+        	font-size 0.8rem
         	border 0
         	border-bottom 1px solid #b4b4b4
 
   .sec1
-      margin-top 30px
+      margin-top 15px
       .sec-title1
       		height 30px
       		font-size 1em
@@ -68,9 +88,10 @@ body
       		padding-left 23px
       		color #646464
       .type
-      		padding	0px 20px 10px 45px
+      		padding	0px 10px 10px 45px
       		height 48px
       		position relative
+
       		&:after
 		        content ""
 		        display block
@@ -284,6 +305,37 @@ body
     color red
     font-size 1.1em
 
+.rele-out
+  position fixed
+  width 270px
+  height 110px
+  background #fff
+  left 50%
+  top 50%
+  transform translate(-50%,-50%)
+  z-index 3
+  border-radius 10px
+  display none
+  .c-t
+    height 64px
+    border-bottom 1px solid #d6d7dc
+    text-align center
+    line-height 64px
+    font-size 1rem
+    color #323232
+  .c-b
+    height 45px
+    line-height 45px
+    text-align center
+    font-size 1.2rem
+    display flex
+    .b-l
+      flex 1
+      color #7f7f7f
+      border-right 1px solid #d6d7dc
+    .b-r
+      color #ea5404
+      flex 1
 
 
 

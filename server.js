@@ -8,6 +8,18 @@ var x=path.join(__dirname,'view')
 var y=path.join(__dirname,"public")
 b.use("/",express.static(x))
 b.use("/public",express.static(y))
-b.listen(11012,console.log(
+b.listen(8888,console.log(
 	"sever"
 ))
+var proxy=require('http-proxy-middleware');
+
+
+b.use("/api",proxy({
+	target:"http://guanjp.com:9805",
+	changeOrigin:true,
+	ws:true,
+	cookieRewrite:true,
+	pathRewrite:{
+	"^/api":"/"
+}
+}))

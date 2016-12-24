@@ -1,15 +1,19 @@
-body {
+* {
+  outline: none;
+  font-family: Droid Sans Fallback;
+}
+* body {
   padding: 0;
   background: #efeff4;
 }
-* {
+* * {
   list-style: none;
 }
-ul {
+* ul {
   padding: 0;
   margin: 0;
 }
-.footer {
+* .footer {
   background: #fff;
   height: 50px;
   position: fixed;
@@ -19,42 +23,42 @@ ul {
   border-top: 1px solid #d6d7dc;
   display: flex;
 }
-.footer .footer-li {
+* .footer .footer-li {
   flex: 1;
 }
-.footer .footer-li .limg1 {
+* .footer .footer-li .limg1 {
   background: url("../../APP切图/底部导航栏/bottom_press_icon04@2x.png") no-repeat center;
 }
-.footer .footer-li .limg2 {
+* .footer .footer-li .limg2 {
   background: url("../../APP切图/底部导航栏/bottom_nor_icon03@2x.png") no-repeat center;
 }
-.footer .footer-li .limg3 {
+* .footer .footer-li .limg3 {
   background: url("../../APP切图/底部导航栏/bottom_nor_icon02@2x.png") no-repeat center;
 }
-.footer .footer-li .limg4 {
+* .footer .footer-li .limg4 {
   background: url("../../APP切图/底部导航栏/bottom_nor_icon01@2x.png") no-repeat center;
 }
-.footer .footer-li .limid {
-  height: 80%;
-  width: 72%;
-  background: url("../../APP切图/底部导航栏/bottom_icon05@2x.png") no-repeat center;
+* .footer .footer-li .limid {
+  height: 74px;
+  width: 44px;
+  background: url("../../APP切图/底部导航栏/bottom_icon05@2x.png") no-repeat center top;
   margin: 0 auto;
   border-radius: 4px;
   margin-top: 6%;
   background-size: 100%;
 }
-.footer .footer-li .li1 {
+* .footer .footer-li .li1 {
   height: 32px;
   background-size: 37% 80%;
 }
-.footer .footer-li .litxt {
+* .footer .footer-li .litxt {
   height: 18px;
   line-height: 18px;
   text-align: center;
   font-size: 0.9em;
   color: #b4b4b4;
 }
-.footer .footer-li .active {
+* .footer .footer-li .active {
   color: #ea5404;
 }
 .slider-box {
@@ -71,6 +75,7 @@ ul {
   display: inline-block;
   float: left;
   height: 320px;
+  width: 25%;
 }
 .slider-box .pointer {
   position: absolute;
@@ -97,7 +102,7 @@ ul {
 }
 .title {
   width: 100%;
-  min-height: 85px;
+  min-height: 56px;
   position: absolute;
   z-index: 3;
   top: 25px;
@@ -113,7 +118,7 @@ ul {
 }
 .title .t-txt .t1 {
   flex: 2;
-  background: url("../../APP切图/首页/nav_icon_down@2x.png") no-repeat left 40px center;
+  background: url("../../APP切图/首页/nav_icon_down@2x.png") no-repeat left 46px center;
   background-size: 10px 5px;
 }
 .title .t-txt .t2 {
@@ -124,7 +129,7 @@ ul {
   flex: 2;
 }
 .title .t-search {
-  width: 355px;
+  width: 94%;
   height: 35px;
   text-align: center;
   line-height: 35px;
@@ -174,13 +179,13 @@ ul {
   background-size: 22px 21px;
 }
 .meu .m-li11 {
-  background: url("../../APP切图/首页/content_icon01_nor@2x.png") no-repeat center;
+  background: url("../../APP切图/首页/content_icon01_nor@2x.png") no-repeat left 10px top 6px;
 }
 .meu .m-li12 {
-  background: url("../../APP切图/首页/content_icon01_litre@2x.png") no-repeat center;
+  background: url("../../APP切图/首页/content_icon01_litre@2x.png") no-repeat left 10px top 6px;
 }
 .meu .m-li13 {
-  background: url("../../APP切图/首页/content_icon01_down@2x.png") no-repeat center;
+  background: url("../../APP切图/首页/content_icon01_down@2x.png") no-repeat left 11px top 6px;
 }
 .title1 {
   display: flex;
@@ -207,14 +212,14 @@ ul {
   position: fixed;
   z-index: 4;
   width: 100%;
-  top: 84px;
+  top: 56px;
   left: 0;
 }
 .c-i {
   position: fixed;
   width: 100%;
   min-height: 200px;
-  top: 130px;
+  top: 102px;
   display: none;
   z-index: 4;
 }
@@ -267,12 +272,12 @@ ul {
 }
 .c2 .c2-ul,
 .c3 .c2-ul {
-  min-height: 300px;
+  min-height: 230px;
 }
 .c2 .c2-ul li,
 .c3 .c2-ul li {
-  height: 45px;
-  line-height: 45px;
+  height: 30px;
+  line-height: 30px;
   text-align: center;
 }
 .c2 .c2-bom,
@@ -394,8 +399,9 @@ ul {
   border-radius: 4px;
   text-align: center;
   width: 60px;
-  line-height: 16px;
+  line-height: 17px;
   font-size: 0.9em;
+  color: #ea5404;
 }
 .sec .sec-right .h4 {
   height: 15px;
@@ -411,7 +417,7 @@ ul {
   color: #f00;
 }
 .sec .sec-right .h4 .h4-2 {
-  flex: 3.4;
+  flex: 4.4;
 }
 .bg {
   height: 100%;
@@ -422,4 +428,15 @@ ul {
   left: 0;
   display: none;
   z-index: 2;
+}
+.up {
+  position: fixed;
+  height: 47px;
+  width: 47px;
+  bottom: 86px;
+  right: 20px;
+  background: url("../../APP切图/首页/content_btn_back@2x.png") no-repeat 0 0;
+  background-size: 47px;
+  display: none;
+  z-index: 4;
 }

@@ -1,3 +1,11 @@
+* {
+  outline: none;
+  font-family: Droid Sans Fallback;
+}
+* {
+  outline: none;
+  font-family: Droid Sans Fallback;
+}
 body {
   background: #efeff4;
   padding: 0;
