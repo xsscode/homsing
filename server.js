@@ -16,8 +16,7 @@ b.listen(16933,function(){
 });
 
 
-
-b.use("/api",proxy( {
+b.use("/api",proxy({
 	target: "http://guanjp.com:9805",
 	changeOrigin: true,
 	ws: true,
