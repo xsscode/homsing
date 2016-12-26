@@ -8,7 +8,7 @@ var x=path.join(__dirname,'view')
 var y=path.join(__dirname,"public")
 b.use("/",express.static(x))
 b.use("/public",express.static(y))
-b.listen(8888,console.log(
+b.listen(16933,console.log(
 	"sever"
 ))
 var proxy=require('http-proxy-middleware');
