@@ -8,7 +8,11 @@ var x=path.join(__dirname,'view')
 var y=path.join(__dirname,"public")
 b.use("/",express.static(x))
 b.use("/public",express.static(y))
+<<<<<<< HEAD:server.js
 b.listen(16933,console.log(
+=======
+b.listen(8888,console.log(
+>>>>>>> 6039854cda9ab3a2b2c846e8b1703521c310e444:app.js
 	"sever"
 ))
 var proxy=require('http-proxy-middleware');
@@ -22,4 +26,8 @@ b.use("/api",proxy({
 	pathRewrite:{
 	"^/api":"/"
 }
+<<<<<<< HEAD:server.js
 }))
+=======
+}))
+>>>>>>> 6039854cda9ab3a2b2c846e8b1703521c310e444:app.js

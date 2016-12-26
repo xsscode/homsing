@@ -7,6 +7,7 @@ var n=$(".slider-img" ).length;
 var cur=0;
 var pointerli=$(".pointer div");
 var timer;
+<<<<<<< HEAD
 sliderbox.off().on("touchstart",function(){clearInterval(timer);console.log("start")});
 //sliderbox.on("touchend",function(){timer=setInterval(tt,1000);console.log("end")});
 sliderbox.on("swipeLeft",left);
@@ -44,6 +45,40 @@ function right(){
 }
 
 timer=setInterval(tt,1500)
+=======
+sliderbox.mouseover(function(){console.log(7);clearInterval(timer);});
+sliderbox.mouseout(function(){console.log(8);timer=setInterval(tt,1000)});
+sliderbox.on("swipeLeft",left);
+function left(){
+	if(cur<3){
+		cur+=1;
+		slider.animate({"margin-left":-375},500,function(){
+			slider.append(slider.children().first());
+			slider.css("margin-left",0);
+			timer=setInterval(tt,1000)
+		});
+		pointerli.removeClass('p-li1').addClass("p-li");
+		pointerli.eq(cur ).removeClass('p-li' ).addClass("p-li1");
+		console.log("hhh")}
+}
+
+sliderbox.on("swipeRight",right);
+function right(){
+	clearInterval(timer);
+	cur-=1
+	if(cur<0){cur=n-1}
+	slider.css("margin-left",-375);
+	slider.prepend(slider.children().last());
+	slider.animate({"margin-left":0},500,function(){
+		timer=setInterval(tt,1000)
+	});
+	pointerli.removeClass('p-li1').addClass("p-li");
+	pointerli.eq(cur).removeClass('p-li' ).addClass("p-li1");
+	console.log("jj")
+}
+
+timer=setInterval(tt,1000)
+>>>>>>> 6039854cda9ab3a2b2c846e8b1703521c310e444
 function tt(){
 	if(cur>=3){cur=-1}
 	cur+=1;
@@ -62,7 +97,11 @@ function tt(){
 var t2=$(".t2" )
 var t3=$(".t3" )
 $(document).scroll(function(){
+<<<<<<< HEAD
 	console.log($(document).scrollTop(),7);
+=======
+	console.log($(document).scrollTop());
+>>>>>>> 6039854cda9ab3a2b2c846e8b1703521c310e444
 	if($(document).scrollTop()>=40 && $(document).scrollTop()<=900){
 		up()
           console.log("up")
@@ -145,7 +184,11 @@ $(".m-li").off().on("click",function(){
 var city
 $(".c1 .c1-left li").on("click",function(){
 	var self=$(this)
+<<<<<<< HEAD
 
+=======
+	city=self.text()
+>>>>>>> 6039854cda9ab3a2b2c846e8b1703521c310e444
 	self.css("background","#fff" ).siblings().css("background","")
 	$(".c1-right" ).fadeOut(300,function(){
 		$(".c1-right" ).fadeIn()
@@ -240,7 +283,11 @@ $(".t-search").on("click",function(){
 location.href="./home-search.html"
 })
 
+<<<<<<< HEAD
 $(".header-search .cancel").on("click",function(){
+=======
+$(".header .cancel").on("click",function(){
+>>>>>>> 6039854cda9ab3a2b2c846e8b1703521c310e444
 	location.href="./home.html"
 })
 
@@ -249,13 +296,19 @@ $(".t1").on("click",function(){
 })
 
 $(".close").on("click",function(){
+<<<<<<< HEAD
 	location.href="./home.html"
+=======
+
+
+>>>>>>> 6039854cda9ab3a2b2c846e8b1703521c310e444
 
 })
 $(".result").on("click",function(){
 	$(".result").css("background","#fff")
 	$(this ).css("background","#efeff4")
 	city=$(this ).text();
+<<<<<<< HEAD
 	sessionStorage.city=city
 
 	setTimeout(function(){
@@ -301,6 +354,16 @@ $(".result-search").on("click",function(){
 $(".x").on("click",function(){
 	console.log(6)
 	searchhistory.val("")
+=======
+	console.log(city);
+	console.log($(".t1" ));
+	setTimeout(function(){
+
+		location.href="./home.html";
+
+		$(".t1" ).text(city);
+	},1000)
+>>>>>>> 6039854cda9ab3a2b2c846e8b1703521c310e444
 })
 
 $(".up").on("click",function(){

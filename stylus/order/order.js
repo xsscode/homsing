@@ -107,9 +107,12 @@ $(".temp .c-b .b-l").on("tap",function(){
 
 $(".bot-li").eq(2).on("tap",function(){
 	location.href="./order-cancel.html"
+<<<<<<< HEAD
 })
 $(".change .c-b .b-l").on("tap",function(){
 	$(".bg" ).hide()
 	$(".change" ).hide()
 
+=======
+>>>>>>> 6039854cda9ab3a2b2c846e8b1703521c310e444
 })

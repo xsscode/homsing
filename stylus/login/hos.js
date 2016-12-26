@@ -12,12 +12,20 @@ function jj(){
 		url:'/api/user/login',
 		type:"POST",
 		dataType:"json",
+<<<<<<< HEAD
 		data:{username:x1,passwd:x2},
 		success:function(res){
 			if(res.code==1){
 				alert("登录成功")
 				sessionStorage.User="logdone"
 				console.log("登录成功",res);
+=======
+		data:{username:"x1",passwd:"x2"},
+		success:function(res){
+			if(res.code==1){
+				alert("登录成功")
+				console.log("登录成功",res)
+>>>>>>> 6039854cda9ab3a2b2c846e8b1703521c310e444
 				location.href = "../self/dengluhou.html"
 			}else{
 				alert(res.msg)
@@ -63,7 +71,11 @@ $(".s1").off().click(function(){
 })
 $(".btn1" ).on("tap",gg)
 function gg(){
+<<<<<<< HEAD
 	$(".btn1" ).text(60+"s后重新发送").animate({"width":100},100 ).css("background","#c7c7c7" ).off();
+=======
+	$(".btn1" ).text(60+"s后重新发送").animate({"width":100},300 ).css("background","#c7c7c7" ).off();
+>>>>>>> 6039854cda9ab3a2b2c846e8b1703521c310e444
 	var tt=setInterval(function(){
 		var t1=parseInt($(".btn1" ).text());
 		$(".btn1" ).text(t1-1+"s后重新发送");
@@ -71,7 +83,11 @@ function gg(){
 			$(".btn1" ).text("重新发送")
 			}
 		if($(".btn1" ).text()=="重新发送"){
+<<<<<<< HEAD
 			$(".btn1" ).on("tap",gg).animate({"width":68},100 ).css("background","#ea5404" )}
+=======
+			$(".btn1" ).on("tap",gg).animate({"width":68},300 ).css("background","#ea5404" )}
+>>>>>>> 6039854cda9ab3a2b2c846e8b1703521c310e444
 	},1000)
 
 }
@@ -125,6 +141,7 @@ $(document ).click(function(e){
 $(".icon").on("tap",function(){
 	location.href="../self/a-self.html"
 })
+<<<<<<< HEAD
 
 $(".d2 input").on("keyup",function(){
 	//console.log(!!$(".d2 input" ).val())
@@ -146,6 +163,29 @@ $(".d3 input").on("keyup",function(){
 })
 
 
+=======
+
+$(".d2 input").on("keyup",function(){
+	//console.log(!!$(".d2 input" ).val())
+if(!!$(".d2 input" ).val()&&!!$(".d3 input" ).val()){
+  $(".btn-box .btn" ).css("background","#ea5404").val(1)
+}
+	else{
+	$(".btn-box .btn" ).css("background","#c7c7c7").val(0)
+}
+})
+$(".d3 input").on("keyup",function(){
+	//console.log(44)
+	if(!!$(".d2 input" ).val()&&!!$(".d3 input" ).val()){
+		$(".btn-box .btn" ).css("background","#ea5404" ).val(1)
+	}
+	else{
+		$(".btn-box .btn" ).css("background","#c7c7c7").val(0)
+	}
+})
+
+
+>>>>>>> 6039854cda9ab3a2b2c846e8b1703521c310e444
 $('.logdone .a2').on('tap',function(){
 	location.href = "./logfirst.html"
 })
@@ -158,6 +198,7 @@ $(".himg").on("tap",function(){
 $(".zhuce-log").on("tap",function(){
 	location.href="./logfirst.html"
 })
+<<<<<<< HEAD
 
 $(".log11" ).on("click",function(){
 	location.href="./logfirst.html"
@@ -165,3 +206,5 @@ $(".log11" ).on("click",function(){
 $(".log22" ).on("click",function(){
 	location.href="../home/home.html"
 })
+=======
+>>>>>>> 6039854cda9ab3a2b2c846e8b1703521c310e444
