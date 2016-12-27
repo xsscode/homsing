@@ -1,0 +1,132 @@
+* {
+  outline: none;
+  font-family: Droid Sans Fallback;
+}
+* {
+  outline: none;
+  font-family: Droid Sans Fallback;
+}
+body {
+  background: #efeff4;
+}
+.header {
+  height: 50px;
+  background: #fff;
+  overflow: hidden;
+}
+.header .tab {
+  display: flex;
+  width: 68%;
+  height: 30px;
+  border: 1px solid #ea5404;
+  border-radius: 6px;
+  margin: 9px auto 9px auto;
+}
+.header .dcell {
+  flex: 1;
+  color: #ea5404;
+  height: 30px;
+  position: relative;
+  text-align: center;
+  line-height: 30px;
+}
+.header .dcell:after {
+  content: "";
+  display: inline-block;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #ea5404;
+  width: 1px;
+}
+.header .dcell:last-child:after {
+  content: "";
+  display: none;
+}
+.header .active {
+  background: #ea5404;
+  color: #fff;
+}
+.sec {
+  margin: 12px 12px 0 12px;
+  padding: 0px 12px 12px 12px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px #e0e0ea;
+  min-height: 110px;
+  background: url("../../APP切图/我发布的需求/content_list_border.9@2x.png") no-repeat center top 30px #fff;
+  background-size: 100% 4px;
+}
+.sec .secheader {
+  height: 36px;
+  line-height: 36px;
+  font-size: 1em;
+}
+.sec .secmid {
+  line-height: 20px;
+  font-size: 0.9rem;
+  text-indent: 2em;
+  color: #646464;
+}
+.sec .secfooter {
+  display: flex;
+}
+.sec .secfooter .time {
+  flex: 1;
+  text-align: right;
+  font-style: normal;
+  padding: 10px 12px 0 12px;
+  line-height: 25px;
+  color: #7c7c7d;
+}
+* {
+  outline: none;
+  font-family: Droid Sans Fallback;
+}
+.footer {
+  background: #fff;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #d6d7dc;
+  display: flex;
+}
+.footer .footer-li {
+  flex: 1;
+}
+.footer .footer-li .limg1 {
+  background: url("../../APP切图/底部导航栏/bottom_nor_icon04@2x.png") no-repeat center;
+}
+.footer .footer-li .limg2 {
+  background: url("../../APP切图/底部导航栏/bottom_nor_icon03@2x.png") no-repeat center;
+}
+.footer .footer-li .limg3 {
+  background: url("../../APP切图/底部导航栏/bottom_press_icon02@2x.png") no-repeat center;
+}
+.footer .footer-li .limg4 {
+  background: url("../../APP切图/底部导航栏/bottom_nor_icon01@2x.png") no-repeat center;
+}
+.footer .footer-li .limid {
+  height: 64px;
+  width: 44px;
+  background: url("../../APP切图/底部导航栏/bottom_icon05@2x.png") no-repeat center top;
+  margin: 0 auto;
+  border-radius: 4px;
+  margin-top: 6%;
+  background-size: 100%;
+}
+.footer .footer-li .li1 {
+  height: 32px;
+  background-size: 37% 80%;
+}
+.footer .footer-li .litxt {
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #b4b4b4;
+}
+.footer .footer-li .active {
+  color: #ea5404;
+}

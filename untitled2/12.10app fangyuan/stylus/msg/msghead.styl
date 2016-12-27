@@ -1,0 +1,38 @@
+*
+ outline none
+ font-family Droid Sans Fallback
+body
+ background #efeff4
+.header
+  height 50px
+  background #fff
+  overflow hidden
+  .tab
+    display flex
+    width 68%
+    height 30px
+    border 1px solid #ea5404
+    border-radius 6px
+    margin 9px auto 9px auto
+   .dcell
+    flex 1
+    color #ea5404
+    height 30px
+    position relative
+    text-align center
+    line-height 30px
+    &:after
+     content ""
+     display inline-block
+     height 30px
+     position absolute
+     right 0
+     top 0
+     background #ea5404
+     width 1px
+    &:last-child:after
+     content ""
+     display none
+  .active
+     background #ea5404
+     color #fff

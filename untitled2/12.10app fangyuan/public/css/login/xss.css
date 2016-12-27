@@ -1,0 +1,283 @@
+* {
+  outline: none;
+  font-family: Droid Sans Fallback;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+* {
+  font-family: Droid Sans Fallback;
+  outline: none;
+}
+* body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #efeff4;
+}
+* .ch {
+  wdith: 100%;
+  height: 44px;
+  line-height: 44px;
+  border-bottom: 1px solid #d6d7dc;
+  margin-bottom: 22px;
+  color: #ea5404;
+  text-align: center;
+  background: url("../../APP切图/登录/nav_back_icon@2x.png") no-repeat left 12px center #fff;
+  background-size: 12px 20px;
+  font-size: 1.2rem;
+  position: relative;
+}
+* .ch .icon {
+  position: absolute;
+  height: 45px;
+  width: 60px;
+  left: 0;
+  top: 0;
+}
+.d2 {
+  background: url("../../APP切图/登录/content_ID_icon@2x.png") no-repeat left 12px center;
+  background-size: 20px;
+  position: relative;
+  border-top: 1px solid #d6d7dc;
+}
+.d2:after {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 2px;
+  background: #e1e1e1;
+  display: block;
+  bottom: -1px;
+  right: 0;
+}
+.d3 {
+  background: url("../../APP切图/登录/content_password_icon@2x.png") no-repeat 12px center;
+  border-bottom: 1px solid #d6d7dc;
+  background-size: 20px;
+  margin-bottom: 44px;
+}
+.d2,
+.d3 {
+  background-color: #fff;
+  width: 100%;
+  height: 50px;
+  text-indent: 3rem;
+  line-height: 50px;
+  font-size: 20px;
+  position: relative;
+  box-sizing: border-box;
+}
+.d2 input,
+.d3 input {
+  border: 0;
+  outline: none;
+  height: 36px;
+  font-size: 0.9rem;
+  padding: 0;
+}
+.btn-box {
+  width: 100%;
+  padding: 0 12px 0 12px;
+  box-sizing: border-box;
+}
+.btn-box .btn {
+  height: 43px;
+  line-height: 43px;
+  text-align: center;
+  border-radius: 6px;
+  background: #c7c7c7;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.log-link {
+  width: 100%;
+  padding: 0 25px 0 25px;
+  display: flex;
+  line-height: 26px;
+  box-sizing: border-box;
+  margin-top: 43px;
+}
+.log-link .s1 {
+  font-size: 1rem;
+  flex: 1;
+  height: 26px;
+  color: #ff8a00;
+}
+.log-link .s2 {
+  font-size: 1rem;
+  flex: 1;
+  text-align: right;
+  height: 26px;
+}
+.meu .m1 {
+  color: #ea5405;
+  line-height: 50px;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  background: url("../../APP切图/登录/nav_back_icon@2x.png") no-repeat left 12px center;
+  background-size: 12px 20px;
+  position: relative;
+  font-size: 1.2rem;
+}
+.meu .m1 .zhuce-log {
+  width: 50px;
+  height: 50px;
+  line-height: 57px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  text-indent: 0;
+  color: #323232;
+}
+.meu .m2 {
+  background: url("../../APP切图/登录/content_ID_icon@2x.png") no-repeat left 12px center;
+  background-size: 20px;
+  border-top: 1px solid #efeff4;
+}
+.meu .m3 {
+  background: url("../../APP切图/登录/content_verify_icon@2x.png") no-repeat left 16px center;
+  background-size: 11px 20px;
+  position: relative;
+}
+.meu .btn1 {
+  position: absolute;
+  left: 70%;
+  top: 10px;
+  border: 0;
+  width: 80px;
+  height: 30px;
+  border-radius: 4px;
+  background: #ea5404;
+  font-size: 0.8em;
+  color: #fff;
+}
+.meu .m4 {
+  background: url("../../APP切图/登录/content_password_icon@2x.png") no-repeat left 14px center;
+  background-size: 18px 20px;
+}
+.meu .m5 {
+  background: url("../../APP切图/登录/content_password_icon@2x.png") no-repeat left 14px center;
+  background-size: 18px 20px;
+}
+.meu .m6 {
+  text-indent: 1.5rem;
+  padding: 0 20px 0 20px;
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  position: relative;
+  background: url("../../APP切图/登录/content_position_icon@2x.png") no-repeat left 12px center #fff;
+  background-size: 20px;
+  position: relative;
+}
+.meu .m6 input {
+  width: 70%;
+}
+.meu .m6 .after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background: #323232;
+  right: 24px;
+  top: 20px;
+  transform: rotate(45deg);
+}
+.meu .m6 .before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background: #323232;
+  right: 30px;
+  top: 20px;
+  transform: rotate(-45deg);
+}
+.meu .m1,
+.meu .m2,
+.meu .m3,
+.meu .m4,
+.meu .m5 {
+  text-indent: 1.5rem;
+  padding: 0 20px 0 20px;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  box-sizing: border-box;
+  position: relative;
+}
+.meu .m1:after,
+.meu .m2:after,
+.meu .m3:after,
+.meu .m4:after,
+.meu .m5:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 96%;
+  height: 1px;
+  background: #e1e1e1;
+  bottom: 0px;
+  right: 0px;
+}
+.meu input {
+  border: 0;
+  height: 90%;
+  font-size: 0.9rem;
+  line-height: 46px;
+}
+.meu .btn2 {
+  width: 70%;
+  height: 50px;
+  background: #cecece;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  border: 0;
+  margin-left: 42px;
+  line-height: 50px;
+  font-size: 20px;
+}
+.meu .m6 .asp {
+  position: absolute;
+  list-style: none;
+  top: 33px;
+  right: 25px;
+  width: 65px;
+  display: none;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 0.9rem;
+  z-index: 4;
+  text-align: center;
+  color: #fff;
+  text-indent: 0;
+}
+.meu .m6 .asp li {
+  border: 1px solid #fff;
+  height: 37px;
+  width: 100%;
+  line-height: 37px;
+  background: #a3a3a3;
+  margin-top: -1px;
+}
+.pass-back {
+  position: absolute;
+  height: 45px;
+  width: 50px;
+  top: 0;
+  left: 0;
+}
+.active {
+  width: 100px;
+  background: #c7c7c7;
+}

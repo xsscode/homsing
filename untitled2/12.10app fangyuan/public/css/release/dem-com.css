@@ -1,0 +1,46 @@
+* {
+  outline: none;
+  font-family: Droid Sans Fallback;
+}
+.dem-bg {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(147,147,147,0.6);
+  z-index: 2;
+}
+.dem-ensure {
+  position: fixed;
+  width: 270px;
+  height: 110px;
+  background: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  border-radius: 10px;
+}
+.dem-ensure .en-top {
+  height: 64px;
+  border-bottom: 1px solid #d6d7dc;
+  text-align: center;
+  line-height: 64px;
+  font-size: 0.9rem;
+  color: #323232;
+}
+.dem-ensure .en-bot {
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ea5404;
+}
+.dem-ensure .en-bot1 {
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ea5404;
+}

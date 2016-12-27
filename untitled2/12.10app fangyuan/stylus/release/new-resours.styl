@@ -1,0 +1,57 @@
+*
+ outline none
+ font-family Droid Sans Fallback
+@import "nav.styl"
+  .pre-resours
+    position absolute
+    height 45px
+    width 80px
+    left 0
+    top 0
+
+  .nav:before
+    content ""
+    display block
+    position absolute
+    width 12px
+    height 2px
+    background #323232
+    transform rotate(45deg)
+    left 10px
+    top 25px
+  .nav:after
+    content ""
+    display block
+    position absolute
+    width 12px
+    height 2px
+    background #323232
+    transform rotate(-45deg)
+    left 10px
+    top 17px
+
+.sec
+  height 40px
+  margin-top 10px
+  padding 0 10px 0 10px
+  width 100%
+  box-sizing border-box
+  .sec-input
+    width 100%
+    border 1px solid #d6d7dc
+    background #fff
+    color #b4b4b4
+    line-height 40px
+    font-size .9rem
+    text-indent 1rem
+    border-radius 4px
+  .sec-submit
+    height 40px
+    line-height 40px
+    font-size 1.1rem
+    border-radius 4px
+    background #fff
+    border 1px solid #d6d7dc
+    color #ea5404
+    text-align center
+
