@@ -55,16 +55,8 @@ $(".bg" ).show()
 })
 
 $(".change").find(".b-r").on("tap",function(){
-	var yy=$(".ban-c44" ).val()
-	console.log(yy,/^\d{4}\/([0-9]|1[012]|0[0-9])\/([0-9]|0[0-9]|[12][0-9]|3[0-1])$/g.test(yy) )
-	if(!/^\d｛4｝\/\d{2}\/\d{2}$/g.test(yy)){}
-	else{
-		sessionStorage.setItem("change-date",yy)
-		$(".change" ).hide()
-		$(".ensure" ).show()
-	}
-	console.log(4)
-
+	$(".change" ).hide()
+	$(".ensure" ).show()
 })
 
 /*$(".h3-box").on("tap",function(){
@@ -107,12 +99,4 @@ $(".temp .c-b .b-l").on("tap",function(){
 
 $(".bot-li").eq(2).on("tap",function(){
 	location.href="./order-cancel.html"
-<<<<<<< HEAD
-})
-$(".change .c-b .b-l").on("tap",function(){
-	$(".bg" ).hide()
-	$(".change" ).hide()
-
-=======
->>>>>>> 6039854cda9ab3a2b2c846e8b1703521c310e444
 })
