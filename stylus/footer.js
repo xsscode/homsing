@@ -12,9 +12,9 @@ $(".footer-li" ).eq(3).on("tap",function(){
 })
 $(".footer-li" ).eq(4).on("tap",function(){
 	if(sessionStorage.User=="logdone"){
-		location.href="../../self/dengluhou.html"
+		location.href="../self/dengluhou.html"
 	}
-	location.href="../self/a-self.html"
+	else{location.href="../self/a-self.html"}
 })
 $(".footer-li" ).eq(2).on("tap",function(){
 	location.href="../release/release-1.html"
